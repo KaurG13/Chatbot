@@ -1,0 +1,8 @@
+chatbot/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.idea/
+*.db

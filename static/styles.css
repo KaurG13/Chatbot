@@ -1,0 +1,127 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Central Chat Container */
+#chat-container {
+    width: 420px;
+    max-height: 90vh;
+    background: #ffffffdd;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header Styling */
+#chat-header {
+    background: #5b1bd8;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-header button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Chat Message Area */
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Message Bubbles */
+.user-message, .bot-message {
+    padding: 12px 16px;
+    max-width: 75%;
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #5b1bd8;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    background-color: #d0a7f7;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+/* Typing Indicator */
+#typing-indicator {
+    padding: 10px;
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    display: none;
+}
+
+/* Chat Input Area */
+#chat-input-area {
+    display: flex;
+    padding: 15px 20px;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#chat-input-area button {
+    margin-left: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #5c1eda;
+    color: rgb(199, 249, 117);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#chat-input-area button:hover {
+    background: #4b0ec7;
+}
+
+/* Floating Chatbot Button (optional if needed) */
+#chatbot-icon {
+    display: none; /* hidden for center chat box design */
+}

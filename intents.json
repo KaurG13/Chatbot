@@ -1,0 +1,165 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["yeah","Thanks", "Thank you", "That's helpful", "you are right","Awesome, thanks", "Thanks for helping me"],
+     "responses": ["My pleasure", "You're Welcome"],
+     "context": [""]
+    },
+    {"tag": "query",
+     "patterns": ["What is Simplilearn?"],
+     "responses": ["Simplilearn is the popular online Bootcamp & online courses learning platform "],
+     "context": [""]
+    },
+    {
+        "tag":"weather",
+        "patterns": ["What’s the weather like?", "Tell me the weather", "Weather update"],
+      "responses": ["I can't check real-time weather, but you can visit weather.com.", "Try checking the latest forecast online!"]
+    },
+    {
+        "tag": "noanswer",
+      "patterns": [ ""," "],
+      "responses": ["Sorry, I didn't understand that. Can you try rephrasing?", "I'm not sure how to respond to that."]
+    },
+    {
+        "tag":"incorrect",
+        "patterns":["Wrong Answer ","Not correct","You do that","No not this"],
+        "responses":["Sorry!Let us try again."]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["What are your working hours?", "When are you open?", "Opening hours?"],
+      "responses": ["We're open every day from 9 AM to 9 PM."]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where are you located?", "Your address?", "Where can I find you?"],
+      "responses": ["This can't be disclosed","Confidential information"]
+    },
+    {
+      "tag": "creator",
+      "patterns": ["Who made you?", "Who is your developer?", "Who created you?"],
+      "responses": ["I was created by Gurkirt Kaur using Python and AI!", "Gurkirt Kaur developed me as a project chatbot."]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather?", "Weather today?", "Tell me the weather"],
+      "responses": ["I can't access live data, but you can check weather.com for the latest forecast."]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?", "When were you made?", "What's your age?"],
+      "responses": ["I'm a timeless digital assistant!", "I was created recently in a coding session!"]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help", "Can you help me?", "I need assistance", "What can you do?"],
+      "responses": ["I'm here to answer questions, chat, and help you with basic tasks!", "Ask me anything, and I'll do my best to help."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "Say something funny"],
+      "responses": [
+        "Why did the programmer quit his job? Because he didn't get arrays!",
+        "Why do Java developers wear glasses? Because they can't C#!"
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": ["What is AI?", "Tell me about machine learning", "Explain Python"],
+      "responses": [
+        "AI stands for Artificial Intelligence, where machines mimic human intelligence.",
+        "Machine learning is a subset of AI focused on letting machines learn from data.",
+        "Python is a versatile programming language great for web dev, AI, and automation."
+      ]
+    },
+    {
+        "tag": "programming_help",
+        "patterns": ["Can you help me with Python?", "I need help in C++", "Explain recursion", "What is a class in Java?"],
+        "responses": ["Sure! Recursion is when a function calls itself. Need a code example?", "I'd love to help! Which concept are you stuck on?"]
+      },
+      {
+        "tag": "math_question",
+        "patterns": ["What's 12 times 8?", "Calculate 54 divided by 6", "How much is 100 minus 37?"],
+        "responses": ["That would be 96.", "The answer is 9.", "It's 63."]
+      },
+      {
+        "tag": "time_now",
+        "patterns": ["What's the time?", "Tell me the current time", "Time now?"],
+        "responses": ["I can't access your system clock, but you can check the top of your screen!"]
+      },
+      {
+        "tag": "date_today",
+        "patterns": ["What's the date today?", "Today's date?", "Tell me the current date"],
+        "responses": ["I don't have a calendar on me, but you can check your phone or computer!"]
+      },
+      {
+        "tag": "google_search",
+        "patterns": ["Search this on Google", "Look this up online", "Google this"],
+        "responses": ["You can search that on [Google](https://www.google.com).", "Here's a link to Google: [Click here](https://www.google.com)"]
+      },
+      {
+        "tag": "browser_help",
+        "patterns": ["My browser is slow", "Chrome is not working", "Firefox won't open"],
+        "responses": ["Try clearing your cache or restarting the browser. If the issue persists, reinstall the browser."]
+      },
+      {
+        "tag": "study_tips",
+        "patterns": ["How can I study better?", "Tips for studying", "Help me with exam prep"],
+        "responses": ["Use the Pomodoro technique, take regular breaks, and test yourself frequently!", "Stay hydrated, avoid multitasking, and make a study schedule."]
+      },
+      {
+        "tag": "career_guidance",
+        "patterns": ["What should I do after college?", "Career advice for CS students", "Best jobs in tech?"],
+        "responses": ["Explore roles like Data Scientist, AI Engineer, or Cloud Architect. Follow your passion and build projects!"]
+      },
+      {
+        "tag": "feeling_down",
+        "patterns": ["I'm feeling sad", "I feel low", "Life is hard"],
+        "responses": ["I'm sorry you're feeling this way. Try talking to someone you trust, or taking a walk.", "You're not alone. Things will get better. Would you like a motivational quote?"]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["Motivate me", "I need motivation", "Say something inspiring"],
+        "responses": [
+          "Believe in yourself. You're capable of amazing things!",
+          "Every day is a new chance to grow. Keep going!"
+        ]
+      },
+      {
+        "tag": "travel_suggestions",
+        "patterns": ["Where should I go on vacation?", "Suggest a travel place", "Holiday ideas?"],
+        "responses": ["How about the beaches of Goa, or the mountains of Manali?", "Try exploring Kerala or Rishikesh!"]
+      },
+      {
+        "tag": "food_recommendation",
+        "patterns": ["What should I eat?", "Dinner ideas?", "Suggest a recipe"],
+        "responses": ["How about trying paneer tikka or masala dosa?", "A bowl of vegetable pulao sounds good!"]
+      },
+      {
+        "tag": "quote",
+        "patterns": ["Give me a quote", "Quote of the day", "Inspire me"],
+        "responses": [
+          "“The only way to do great work is to love what you do.” – Steve Jobs",
+          "“Believe you can and you're halfway there.” – Theodore Roosevelt"
+        ]
+      },
+      {
+        "tag": "fun_fact",
+        "patterns": ["Tell me a fact", "Interesting fact?", "Did you know?"],
+        "responses": [
+          "Did you know? Honey never spoils. Archaeologists have found edible honey in ancient tombs!",
+          "Bananas are berries, but strawberries aren't!"
+        ]
+      }      
+      
+
+]}
